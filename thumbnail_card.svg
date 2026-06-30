@@ -1,0 +1,85 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1f2e"/>
+      <stop offset="100%" stop-color="#2d3450"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- subtle grid texture -->
+  <g opacity="0.06" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+  </g>
+
+  <!-- Track badge -->
+  <rect x="60" y="60" width="220" height="40" rx="20" fill="url(#accent)"/>
+  <text x="170" y="86" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0b0e18" text-anchor="middle">AGENTS FOR BUSINESS</text>
+
+  <!-- Title -->
+  <text x="60" y="195" font-family="Arial, sans-serif" font-size="64" font-weight="800" fill="#ffffff">RequireMint</text>
+  <text x="60" y="240" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#a5b1cc">From stakeholder chaos to sprint-ready user stories</text>
+
+  <!-- Pipeline: stakeholder -> 4 agents -> backlog -->
+  <g transform="translate(60,330)">
+    <!-- stakeholder icon -->
+    <circle cx="40" cy="40" r="34" fill="#374162"/>
+    <circle cx="40" cy="28" r="12" fill="#cbd5f5"/>
+    <path d="M16 58 Q40 38 64 58 L64 70 L16 70 Z" fill="#cbd5f5"/>
+    <text x="40" y="100" font-family="Arial, sans-serif" font-size="15" fill="#a5b1cc" text-anchor="middle">Stakeholder</text>
+
+    <!-- arrow -->
+    <path d="M90 40 L150 40" stroke="#6366f1" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <!-- agent boxes -->
+    <g transform="translate(160,0)">
+      <rect width="190" height="80" rx="12" fill="#262c45" stroke="#6366f1" stroke-width="2"/>
+      <text x="95" y="35" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">Elicitation</text>
+      <text x="95" y="55" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">Agent</text>
+      <text x="95" y="100" font-family="Arial, sans-serif" font-size="13" fill="#a5b1cc" text-anchor="middle">asks, clarifies</text>
+    </g>
+
+    <path d="M350 40 L410 40" stroke="#6366f1" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <g transform="translate(420,0)">
+      <rect width="190" height="80" rx="12" fill="#262c45" stroke="#22d3ee" stroke-width="2"/>
+      <text x="95" y="35" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">Synthesis</text>
+      <text x="95" y="55" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">Agent</text>
+      <text x="95" y="100" font-family="Arial, sans-serif" font-size="13" fill="#a5b1cc" text-anchor="middle">clusters, flags conflicts</text>
+    </g>
+
+    <path d="M610 40 L670 40" stroke="#6366f1" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <g transform="translate(680,0)">
+      <rect width="190" height="80" rx="12" fill="#262c45" stroke="#22d3ee" stroke-width="2"/>
+      <text x="95" y="35" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">Story Writer</text>
+      <text x="95" y="55" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">Agent</text>
+      <text x="95" y="100" font-family="Arial, sans-serif" font-size="13" fill="#a5b1cc" text-anchor="middle">INVEST stories</text>
+    </g>
+
+    <path d="M870 40 L930 40" stroke="#6366f1" stroke-width="3" marker-end="url(#arrow)"/>
+
+    <g transform="translate(940,0)">
+      <rect width="190" height="80" rx="12" fill="#262c45" stroke="#f59e0b" stroke-width="2"/>
+      <text x="95" y="35" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">Critic</text>
+      <text x="95" y="55" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">Agent</text>
+      <text x="95" y="100" font-family="Arial, sans-serif" font-size="13" fill="#a5b1cc" text-anchor="middle">QA loop</text>
+    </g>
+  </g>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6366f1"/>
+    </marker>
+  </defs>
+
+  <!-- footer tag -->
+  <text x="60" y="600" font-family="Arial, sans-serif" font-size="16" fill="#6b7591">Built with Google ADK · MCP · Gemini</text>
+</svg>

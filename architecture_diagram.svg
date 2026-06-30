@@ -1,0 +1,85 @@
+<svg viewBox="0 0 1100 750" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1100" height="750" fill="#f7f8fc"/>
+
+  <text x="550" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#1a1f2e" text-anchor="middle">System Architecture</text>
+
+  <!-- Stakeholder -->
+  <g transform="translate(60,100)">
+    <rect width="160" height="70" rx="10" fill="#e5e9f7" stroke="#374162" stroke-width="2"/>
+    <text x="80" y="30" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1f2e" text-anchor="middle">Stakeholder</text>
+    <text x="80" y="50" font-family="Arial, sans-serif" font-size="12" fill="#5a6280" text-anchor="middle">(chat / interview)</text>
+  </g>
+
+  <!-- Elicitation Agent -->
+  <g transform="translate(60,230)">
+    <rect width="220" height="90" rx="10" fill="#eef1ff" stroke="#6366f1" stroke-width="2"/>
+    <text x="110" y="32" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#1a1f2e" text-anchor="middle">Elicitation Agent</text>
+    <text x="110" y="52" font-family="Arial, sans-serif" font-size="12" fill="#5a6280" text-anchor="middle">Interviews stakeholder,</text>
+    <text x="110" y="68" font-family="Arial, sans-serif" font-size="12" fill="#5a6280" text-anchor="middle">probes vague answers</text>
+  </g>
+
+  <path d="M170 100 L170 230" stroke="#374162" stroke-width="2" fill="none" marker-end="url(#a2)"/>
+  <path d="M280 275 L380 275" stroke="#6366f1" stroke-width="2.5" marker-end="url(#a2)"/>
+
+  <!-- Synthesis Agent -->
+  <g transform="translate(390,230)">
+    <rect width="220" height="90" rx="10" fill="#eafbff" stroke="#22d3ee" stroke-width="2"/>
+    <text x="110" y="32" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#1a1f2e" text-anchor="middle">Synthesis Agent</text>
+    <text x="110" y="52" font-family="Arial, sans-serif" font-size="12" fill="#5a6280" text-anchor="middle">Clusters notes into epics,</text>
+    <text x="110" y="68" font-family="Arial, sans-serif" font-size="12" fill="#5a6280" text-anchor="middle">flags stakeholder conflicts</text>
+  </g>
+
+  <path d="M610 275 L710 275" stroke="#22d3ee" stroke-width="2.5" marker-end="url(#a2)"/>
+
+  <!-- Story Writer Agent -->
+  <g transform="translate(720,230)">
+    <rect width="220" height="90" rx="10" fill="#eafbff" stroke="#22d3ee" stroke-width="2"/>
+    <text x="110" y="32" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#1a1f2e" text-anchor="middle">Story Writer Agent</text>
+    <text x="110" y="52" font-family="Arial, sans-serif" font-size="12" fill="#5a6280" text-anchor="middle">Writes INVEST stories +</text>
+    <text x="110" y="68" font-family="Arial, sans-serif" font-size="12" fill="#5a6280" text-anchor="middle">acceptance criteria</text>
+  </g>
+
+  <!-- down to critic -->
+  <path d="M830 320 L830 400 L500 400 L500 440" stroke="#f59e0b" stroke-width="2.5" fill="none" marker-end="url(#a3)"/>
+
+  <!-- Critic Agent -->
+  <g transform="translate(390,440)">
+    <rect width="220" height="90" rx="10" fill="#fff7e8" stroke="#f59e0b" stroke-width="2"/>
+    <text x="110" y="32" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#1a1f2e" text-anchor="middle">Critic / QA Agent</text>
+    <text x="110" y="52" font-family="Arial, sans-serif" font-size="12" fill="#5a6280" text-anchor="middle">Reviews for ambiguity,</text>
+    <text x="110" y="68" font-family="Arial, sans-serif" font-size="12" fill="#5a6280" text-anchor="middle">missing edge cases</text>
+  </g>
+
+  <!-- feedback loop back to elicitation -->
+  <path d="M390 470 Q170 470 170 320" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,4" fill="none" marker-end="url(#a4)"/>
+  <text x="240" y="500" font-family="Arial, sans-serif" font-size="12" fill="#ef4444">clarifying questions (feedback loop)</text>
+
+  <!-- down to final backlog -->
+  <path d="M500 530 L500 580" stroke="#16a34a" stroke-width="2.5" fill="none" marker-end="url(#a5)"/>
+
+  <!-- Final backlog -->
+  <g transform="translate(390,590)">
+    <rect width="220" height="70" rx="10" fill="#eafff1" stroke="#16a34a" stroke-width="2"/>
+    <text x="110" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#1a1f2e" text-anchor="middle">Final Backlog</text>
+    <text x="110" y="50" font-family="Arial, sans-serif" font-size="12" fill="#5a6280" text-anchor="middle">epics + stories (JSON export)</text>
+  </g>
+
+  <!-- MCP server, connected to synthesis + story writer -->
+  <g transform="translate(720,440)">
+    <rect width="220" height="100" rx="10" fill="#f3eaff" stroke="#a855f7" stroke-width="2"/>
+    <text x="110" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#1a1f2e" text-anchor="middle">MCP Server</text>
+    <text x="110" y="50" font-family="Arial, sans-serif" font-size="12" fill="#5a6280" text-anchor="middle">check_duplicate_epic()</text>
+    <text x="110" y="68" font-family="Arial, sans-serif" font-size="12" fill="#5a6280" text-anchor="middle">save_story()</text>
+    <text x="110" y="86" font-family="Arial, sans-serif" font-size="12" fill="#5a6280" text-anchor="middle">list_backlog()</text>
+  </g>
+
+  <path d="M830 320 L830 440" stroke="#a855f7" stroke-width="2" stroke-dasharray="4,3" fill="none"/>
+  <text x="845" y="385" font-family="Arial, sans-serif" font-size="11" fill="#a855f7">tool calls</text>
+
+  <defs>
+    <marker id="a2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#374162"/></marker>
+    <marker id="a3" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#f59e0b"/></marker>
+    <marker id="a4" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#ef4444"/></marker>
+    <marker id="a5" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#16a34a"/></marker>
+  </defs>
+</svg>

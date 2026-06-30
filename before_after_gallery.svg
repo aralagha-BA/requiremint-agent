@@ -1,0 +1,73 @@
+<svg viewBox="0 0 1100 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1100" height="600" fill="#ffffff"/>
+  <text x="550" y="45" font-family="Arial, sans-serif" font-size="26" font-weight="800" fill="#1a1f2e" text-anchor="middle">From Messy Notes to Sprint-Ready Stories</text>
+
+  <!-- divider -->
+  <line x1="550" y1="80" x2="550" y2="570" stroke="#e2e5ee" stroke-width="2"/>
+
+  <!-- LEFT: before -->
+  <text x="270" y="90" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#9aa1b5" text-anchor="middle">BEFORE</text>
+
+  <g transform="translate(60,110) rotate(-3)">
+    <rect width="200" height="110" fill="#fff3b0" stroke="#e6c200" stroke-width="1"/>
+    <text x="14" y="30" font-family="Arial, sans-serif" font-size="13" fill="#5a5a1f">"make it easier</text>
+    <text x="14" y="50" font-family="Arial, sans-serif" font-size="13" fill="#5a5a1f">to use, idk,</text>
+    <text x="14" y="70" font-family="Arial, sans-serif" font-size="13" fill="#5a5a1f">just better UX</text>
+    <text x="14" y="90" font-family="Arial, sans-serif" font-size="13" fill="#5a5a1f">i guess?"</text>
+  </g>
+
+  <g transform="translate(290,160) rotate(4)">
+    <rect width="200" height="110" fill="#ffd6e8" stroke="#e699bd" stroke-width="1"/>
+    <text x="14" y="30" font-family="Arial, sans-serif" font-size="13" fill="#5a1f3a">stakeholder A:</text>
+    <text x="14" y="50" font-family="Arial, sans-serif" font-size="13" fill="#5a1f3a">admins need full</text>
+    <text x="14" y="70" font-family="Arial, sans-serif" font-size="13" fill="#5a1f3a">access. B: no,</text>
+    <text x="14" y="90" font-family="Arial, sans-serif" font-size="13" fill="#5a1f3a">restrict by role!</text>
+  </g>
+
+  <g transform="translate(90,290) rotate(2)">
+    <rect width="200" height="110" fill="#c9f7d1" stroke="#7fd996" stroke-width="1"/>
+    <text x="14" y="30" font-family="Arial, sans-serif" font-size="13" fill="#1f5a2e">"export should</text>
+    <text x="14" y="50" font-family="Arial, sans-serif" font-size="13" fill="#1f5a2e">work somehow,</text>
+    <text x="14" y="70" font-family="Arial, sans-serif" font-size="13" fill="#1f5a2e">maybe csv or</text>
+    <text x="14" y="90" font-family="Arial, sans-serif" font-size="13" fill="#1f5a2e">pdf?"</text>
+  </g>
+
+  <g transform="translate(310,400) rotate(-5)">
+    <rect width="200" height="110" fill="#d6e8ff" stroke="#99bde6" stroke-width="1"/>
+    <text x="14" y="30" font-family="Arial, sans-serif" font-size="13" fill="#1f3a5a">no acceptance</text>
+    <text x="14" y="50" font-family="Arial, sans-serif" font-size="13" fill="#1f3a5a">criteria, no</text>
+    <text x="14" y="70" font-family="Arial, sans-serif" font-size="13" fill="#1f3a5a">priority, no</text>
+    <text x="14" y="90" font-family="Arial, sans-serif" font-size="13" fill="#1f3a5a">owner role</text>
+  </g>
+
+  <!-- RIGHT: after -->
+  <text x="830" y="90" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#16a34a" text-anchor="middle">AFTER</text>
+
+  <g transform="translate(600,110)">
+    <rect width="450" height="150" rx="10" fill="#f3fff6" stroke="#16a34a" stroke-width="2"/>
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#16a34a">US-014 · must_have</text>
+    <text x="20" y="55" font-family="Arial, sans-serif" font-size="13" fill="#1a1f2e">As an Admin, I want to restrict data</text>
+    <text x="20" y="73" font-family="Arial, sans-serif" font-size="13" fill="#1a1f2e">export access by user role, so that</text>
+    <text x="20" y="91" font-family="Arial, sans-serif" font-size="13" fill="#1a1f2e">sensitive records aren't over-exposed.</text>
+    <text x="20" y="115" font-family="Arial, sans-serif" font-size="12" fill="#5a6280">✓ Given a Viewer role, export is disabled</text>
+    <text x="20" y="133" font-family="Arial, sans-serif" font-size="12" fill="#5a6280">✓ Given an Admin role, full export allowed</text>
+  </g>
+
+  <g transform="translate(600,280)">
+    <rect width="450" height="150" rx="10" fill="#f3fff6" stroke="#16a34a" stroke-width="2"/>
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#16a34a">US-015 · should_have</text>
+    <text x="20" y="55" font-family="Arial, sans-serif" font-size="13" fill="#1a1f2e">As a BA, I want to export reports as</text>
+    <text x="20" y="73" font-family="Arial, sans-serif" font-size="13" fill="#1a1f2e">CSV or PDF, so that I can share findings</text>
+    <text x="20" y="91" font-family="Arial, sans-serif" font-size="13" fill="#1a1f2e">with non-technical stakeholders.</text>
+    <text x="20" y="115" font-family="Arial, sans-serif" font-size="12" fill="#5a6280">✓ Given export click, both formats offered</text>
+    <text x="20" y="133" font-family="Arial, sans-serif" font-size="12" fill="#5a6280">✓ Given large dataset, export completes &lt;30s</text>
+  </g>
+
+  <g transform="translate(600,450)">
+    <rect width="450" height="100" rx="10" fill="#fff7e8" stroke="#f59e0b" stroke-width="2"/>
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#b45309">⚠ Conflict flagged by Critic Agent</text>
+    <text x="20" y="55" font-family="Arial, sans-serif" font-size="13" fill="#1a1f2e">Stakeholder A wants full admin access;</text>
+    <text x="20" y="73" font-family="Arial, sans-serif" font-size="13" fill="#1a1f2e">Stakeholder B wants role-based restriction.</text>
+    <text x="20" y="91" font-family="Arial, sans-serif" font-size="12" fill="#5a6280">→ Question routed back to stakeholders</text>
+  </g>
+</svg>
