@@ -1,0 +1,4 @@
+google-adk
+mcp
+streamlit
+pydantic>=2.0
